@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: antiquewhite;
+        }
+
+        img {
+            width: 70%;
+        }
+
+        .wrapper {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .btn {
+            border: none;
+            color: #fff;
+            padding: 15px 32px;
+            text-decoration: none;
+            display: inline-block;
+            font-style: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 3px;
+        }
+
+        .btn-primary {
+            background-color: rgb(53, 156, 246);
+        }
+
+        .card {
+            text-align: center;
+            width: 400px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0), 0 6px 36px rgba(0, 0, 0, 0.13);
+            background-color: #fff;
+        }
+
+        .image {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0), 0 6px 36px rgba(0, 0, 0, 0.13);
+            border: 3px solid white;
+        }
+
+        .upload {
+            display: grid;
+            place-items: center;
+            height: 30vh;
+        }
+
+        title {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/profile" method="post">
+        <div class="upload">
+            <h3>upload profile photo</h3>
+            <input id="image" type="file" name="sampleFile" accept="image/*">
+            <input type="submit" class="btn btn-primary submit">
+        </div>
+    </form>
+    <div class="wrapper">
+        <div class="card">
+
+
+            <img class="image" src="../upload/default2.jpg" width="20px" height="30px">
+
+            <h1 class="title">welcome!!</h1>
+            <p class="about">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nesciunt molestias expedita
+            </p>
+            <button type="button" class="btn btn-primary">View profile</button>
+           
+        </div>
+        <!-- <div class="profile">
+            <h2>Current profile</h2>
+            <label>Username</label>
+            <div></div>
+            <label>Email</label>
+            <div></div>
+            <label>Password</label>
+            <div></div>
+            <button type="button" class="btn btn-primary"><a href="/edit">Edit profile</a></button>
+
+        
+
+        </div> -->
+    </div>
+    <h2>Edit Profile</h2>
+    <label>Username</label>
+    <input type="text" name="newusername">
+    <label>Email</label>
+    <input type="email" name="newemail"><br><br><br>
+    <input type="submit" value="save changes">
+</body>
+
+</html>

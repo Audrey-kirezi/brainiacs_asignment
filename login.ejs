@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-color: rgba(0, 94, 255, 0.4);
+}
+.form{
+
+display: grid;
+grid-template-rows: 5em;
+grid-template-columns: 25em;
+border:1px solid white;
+background-color: white;
+width: 350px;
+height:400px;
+padding:10px;
+margin:2em 25em;
+border-radius: 5px;
+
+}
+.login{
+    width: 100px;
+    height:35px;
+    color:white;
+    background-color: rgb(0, 200, 255);
+    border-radius: 7px;
+    border: none;
+}
+
+#name{
+    background-color: rgba(128,128,128,0.1);
+    width:335px;
+    height:30px;
+    border-radius: 7px;
+    border: none;
+}
+#email{
+    background-color: rgba(128,128,128,0.1);
+    width:335px;
+    height:30px;
+    border-radius: 7px;
+    border: none;
+}
+#password{
+    background-color: rgba(128,128,128,0.1);
+    width:335px;
+    height:30px;
+    border-radius: 7px;
+    border: none;
+
+}
+
+h5{
+    font-weight: lighter;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <form action="/index" method="POST">
+            <div class="form">
+    <h1>Login</h1>
+    <label for="name"><input type="text" id="name" name="name" placeholder="username"></label><br>
+    <label for="email"><input type="email" id="email" name="email" placeholder="Email"></label><br>
+    <label for="password"><input type="password" id="password" name="password" placeholder="password"></label><br>
+    <a href="/profile"><button class="login">Sign in</button></a><br>
+    <h5>Don't have an account?<a href="/signup">sign up here</a></h5>
+    </div>
+    </form>
+</main>
+</body>
+</html>
